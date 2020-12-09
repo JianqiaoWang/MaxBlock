@@ -4,14 +4,14 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of MaxBlock is to ...
+The goal of MaxBlock is to detect the simultatenous signal between two outcomes.
 
 ## Installation
 
-You can install the released version of MaxBlock from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of MaxBlock from github with:
 
 ``` r
-install.packages("MaxBlock")
+devtools::install_github("JianqiaoWang/MaxBlock")
 ```
 
 ## Example
