@@ -1,6 +1,6 @@
 #' @title Max test for detecting simultaneous signals.
 #'
-#' @description  Given two sequences of paired test statistics, tests whether any simultaneous signals exist. Same as the MaxTest function in ssa package.
+#' @description  Given two positive sequences of paired test statistics, tests whether any simultaneous signals exist. Same as the MaxTest function in ssa package.
 #'
 #' @param T1,T2 paired vectors of test statistics, both must be the same length; must be stochastically larger under the alternative than under the null; must contain only positive values
 #'

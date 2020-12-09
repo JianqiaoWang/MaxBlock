@@ -46,7 +46,7 @@ for(i in 1:1000){
            outcome.1 = Y.1, outcome.2 =Y.2, )
 }
 # ------------------------------- Max test 
- maxtest(T1 = (z.block[,1])^2, T2 = (z.block[,2])^2)
+maxtest(T1 = (z.block[,1])^2, T2 = (z.block[,2])^2)
 # ------------------------------- Stepwise block selection 
 StepSelect(z.block, alpha = 0.05 )
 ```
