@@ -1,6 +1,6 @@
-#' Max test for detecting simultaneous signals. Same as the MaxTest function in ssa package 
+#' @title Max test for detecting simultaneous signals.
 #'
-#' Given two sequences of paired test statistics, tests whether any simultaneous signals exist
+#' @description  Given two sequences of paired test statistics, tests whether any simultaneous signals exist. Same as the MaxTest function in ssa package.
 #'
 #' @param T1,T2 paired vectors of test statistics, both must be the same length; must be stochastically larger under the alternative than under the null; must contain only positive values
 #'
@@ -34,13 +34,13 @@ maxtest <- function(T1,T2){
   if(sum(is.na(T1)) > 0 || sum(is.na(T2)) > 0){
     stop("No missing data allowed");
   }
-  
+
   T <- pmin(T1,T2);
   M <- max(T);
   n <- length(T);
   k <- sum(T1>=M);
   m <- sum(T2>=M);
   p <- 1-phyper(0,k,n-k,m);
-  
+
   return(list(p=p,M=M));
 }
