@@ -21,9 +21,14 @@ devtools::install_github("JianqiaoWang/MaxBlock")
 ## Example
 
 This is a basic example which shows you how to solve a common problem.
-The input is - data for outcome 1 \((X_1, Y_1)\) - data for outcome 2
-\(X_2, Y_2\) - A list of block range: each element of the list contains
-the index of variants within the block.
+The input is
+
+  - data for outcome 1 \((X_1, Y_1)\)
+  - data for outcome 2 \(X_2, Y_2\)
+  - A list of block range: each element of the list contains the index
+    of variants within the block.
+
+<!-- end list -->
 
 ``` r
 library(MaxBlock)
